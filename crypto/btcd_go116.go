@@ -7,7 +7,7 @@ package crypto
 // which otherwise causes problems when `go mod tidy` tries to please Go 1.16
 // (which we don't care about any more at this point).
 //
-// See https://github.com/yspk/go-libp2p-core/issues/252 for details.
+// See https://github.com/libp2p/go-libp2p-core/issues/252 for details.
 import (
 	_ "github.com/btcsuite/btcd/chaincfg"
 )

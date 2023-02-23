@@ -4,9 +4,9 @@ import (
 	"net"
 
 	logging "github.com/ipfs/go-log/v2"
+	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
-	"github.com/yspk/go-libp2p-core/peer"
 )
 
 var log = logging.WithSkip(logging.Logger("canonical-log"), 1)

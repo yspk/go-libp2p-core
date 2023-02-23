@@ -3,8 +3,8 @@ package peer
 import (
 	"encoding/json"
 
+	"github.com/libp2p/go-libp2p-core/internal/catch"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/yspk/go-libp2p-core/internal/catch"
 )
 
 // Helper struct for decoding as we can't unmarshal into an interface (Multiaddr).

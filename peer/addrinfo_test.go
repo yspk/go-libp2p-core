@@ -4,8 +4,6 @@ import (
 	"testing"
 
 	ma "github.com/multiformats/go-multiaddr"
-
-	. "github.com/yspk/go-libp2p-core/peer"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"github.com/mikioh/tcpinfo"
 	"io"
 
-	ic "github.com/yspk/go-libp2p-core/crypto"
-	"github.com/yspk/go-libp2p-core/peer"
+	ic "github.com/libp2p/go-libp2p-core/crypto"
+	"github.com/libp2p/go-libp2p-core/peer"
 
 	ma "github.com/multiformats/go-multiaddr"
 )

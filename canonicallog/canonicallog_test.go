@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/libp2p/go-libp2p-core/test"
 	"github.com/multiformats/go-multiaddr"
-	"github.com/yspk/go-libp2p-core/test"
 )
 
 func TestLogs(t *testing.T) {

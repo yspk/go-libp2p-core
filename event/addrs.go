@@ -1,8 +1,8 @@
 package event
 
 import (
+	"github.com/libp2p/go-libp2p-core/record"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/yspk/go-libp2p-core/record"
 )
 
 // AddrAction represents an action taken on one of a Host's listen addresses.

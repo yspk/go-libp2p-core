@@ -4,10 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/yspk/go-libp2p-core/crypto"
-	. "github.com/yspk/go-libp2p-core/peer"
-	"github.com/yspk/go-libp2p-core/record"
-	"github.com/yspk/go-libp2p-core/test"
+	"github.com/libp2p/go-libp2p-core/crypto"
+	"github.com/libp2p/go-libp2p-core/record"
+	"github.com/libp2p/go-libp2p-core/test"
 )
 
 func TestPeerRecordConstants(t *testing.T) {

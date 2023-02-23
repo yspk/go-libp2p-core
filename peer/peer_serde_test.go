@@ -3,8 +3,7 @@ package peer_test
 import (
 	"testing"
 
-	"github.com/yspk/go-libp2p-core/peer"
-	. "github.com/yspk/go-libp2p-core/test"
+	"github.com/libp2p/go-libp2p-core/peer"
 )
 
 func TestPeerSerdePB(t *testing.T) {
