@@ -2,6 +2,7 @@ package network
 
 import (
 	"context"
+	"github.com/mikioh/tcpinfo"
 	"io"
 
 	ic "github.com/libp2p/go-libp2p-core/crypto"
@@ -31,6 +32,8 @@ type Conn interface {
 
 	// GetStreams returns all open streams over this conn.
 	GetStreams() []Stream
+
+	GetTCPInfo() (*tcpinfo.Info, error)
 }
 
 // ConnSecurity is the interface that one can mix into a connection interface to

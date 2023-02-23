@@ -4,6 +4,7 @@ package transport
 
 import (
 	"context"
+	"github.com/mikioh/tcpinfo"
 	"net"
 
 	"github.com/libp2p/go-libp2p-core/network"
@@ -32,6 +33,7 @@ type CapableConn interface {
 
 	// Transport returns the transport to which this connection belongs.
 	Transport() Transport
+	GetTCPInfo() (*tcpinfo.Info, error)
 }
 
 // Transport represents any device by which you can connect to and accept
@@ -112,5 +114,11 @@ type Upgrader interface {
 	// UpgradeListener upgrades the passed multiaddr-net listener into a full libp2p-transport listener.
 	UpgradeListener(Transport, manet.Listener) Listener
 	// Upgrade upgrades the multiaddr/net connection into a full libp2p-transport connection.
-	Upgrade(ctx context.Context, t Transport, maconn manet.Conn, dir network.Direction, p peer.ID, scope network.ConnManagementScope) (CapableConn, error)
+	Upgrade(ctx context.Context, t Transport, maconn TracingConn, dir network.Direction, p peer.ID, scope network.ConnManagementScope) (CapableConn, error)
+}
+
+type TracingConn interface {
+	manet.Conn
+
+	GetTCPInfo() (*tcpinfo.Info, error)
 }
