@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p-core/peer"
-	"github.com/libp2p/go-libp2p-core/protocol"
+	"github.com/yspk/go-libp2p-core/peer"
+	"github.com/yspk/go-libp2p-core/protocol"
 )
 
 func BenchmarkBandwidthCounter(b *testing.B) {

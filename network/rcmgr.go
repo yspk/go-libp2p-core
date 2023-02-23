@@ -1,8 +1,8 @@
 package network
 
 import (
-	"github.com/libp2p/go-libp2p-core/peer"
-	"github.com/libp2p/go-libp2p-core/protocol"
+	"github.com/yspk/go-libp2p-core/peer"
+	"github.com/yspk/go-libp2p-core/protocol"
 )
 
 // ResourceManager is the interface to the network resource management subsystem.

@@ -13,7 +13,7 @@ import (
 	btcec "github.com/btcsuite/btcd/btcec/v2"
 	openssl "github.com/libp2p/go-openssl"
 
-	"github.com/libp2p/go-libp2p-core/internal/catch"
+	"github.com/yspk/go-libp2p-core/internal/catch"
 )
 
 // KeyPairFromStdKey wraps standard library (and secp256k1) private keys in libp2p/go-libp2p-core/crypto keys
